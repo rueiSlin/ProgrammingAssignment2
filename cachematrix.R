@@ -1,9 +1,11 @@
 ## The makeCacheMatrix() function can be used to generate a new vector
 ## containing information of an invertible matrix and an indicator stating
 ## if the matix has been calculated.
-## Example: 
+## Example 1a: 
 ## > newVec <- makeCacheMatrix(matrix(1:4,2,2))
-## 
+## Example 1b:
+## > newVec <- makeCacheMatrix()
+## > newVec$set(matrix(1:4,2,2))
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -38,6 +40,7 @@ IMTX <- NULL
 ##      [,1] [,2]
 ## [1,]   -2  1.5
 ## [2,]    1 -0.5
+
 
 cacheSolve <- function(x, ...) {
 IMTX <- x$getIMTX()
