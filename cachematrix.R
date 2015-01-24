@@ -51,5 +51,5 @@ IMTX <- x$getIMTX()
   IMTX <- solve(data, ...)
   x$setIMTX(IMTX)
   IMTX
-        ## Return a matrix that is the inverse of 'x'
+## Return a matrix that is the inverse of 'x'
 }
